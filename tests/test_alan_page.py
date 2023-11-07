@@ -6,15 +6,15 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 TIME_TO_WAIT = 1
-FILE_PATH = "your own path" #example "C:\\Users\\Dominik\\test.pdf"
+FILE_PATH = "Your file path" #example "C:\\Users\\Dominik\\test.pdf"
 
 
 class TestPositiveCases:
 
     @pytest.mark.positive
     @pytest.mark.general
-    def test_validate_top_bar_menu(self, driver):
-        print("Starting test_validate_all_top_bar_menu")
+    def test_validate_top_bar_menu_and_footage(self, driver):
+        print("Starting test_validate_top_bar_menu_and_footage")
 
         # CHECK CANDIDATE SECTION
         print("Checking candidates section")
