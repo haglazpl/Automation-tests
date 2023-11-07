@@ -6,6 +6,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 TIME_TO_WAIT = 1
+FILE_PATH = "your own path" #example "C:\\Users\\Dominik\\test.pdf"
 
 
 class TestPositiveCases:
@@ -96,8 +97,7 @@ class TestNegativeCases:
 
         action.double_click(select_first_checkbox)
         action.double_click(select_second_checkbox)
-        driver.find_element(By.XPATH, "//div[@id='upload-1']/div/div/input[@name='upload-1']").send_keys(
-            "C:\\Users\\Dominik\\test.pdf")
+        driver.find_element(By.XPATH, "//div[@id='upload-1']/div/div/input[@name='upload-1']").send_keys(FILE_PATH)
 
         # Try to apply by clicking apply button
         apply_button.click()
